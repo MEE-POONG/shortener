@@ -4,9 +4,7 @@ import path from 'path';
 const __dirname = path.resolve(path.dirname('')); 
 const router = express.Router();
 
-router.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '/index.html'));
-});
+router.use('/', express.static(path.join(__dirname, '/frontend/dist')));
 
 
 router.get('/:urlId', async (req, res) => {
