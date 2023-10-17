@@ -7,7 +7,6 @@ COPY ./ ./
 # Install the Project Dependencies like Express Framework
 RUN npm install
 RUN npm run postinstall
-RUN npm run build
 
 # Tell that this image is going to Open a Port 
 EXPOSE 3333
