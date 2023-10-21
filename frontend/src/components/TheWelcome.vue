@@ -13,7 +13,7 @@ const submit = async () => {
   try {
     const { data } = await axios({
       method: 'post',
-      url: 'https://shortener.meetanggroup.com/api/short',
+      url: 'https://thpsd.com/api/short',
       data: {
         origUrl: origUrl.value
       }
