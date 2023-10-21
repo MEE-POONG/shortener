@@ -34,12 +34,13 @@ const submit = async () => {
   <div class="container order" style="border-radius: 24px;">
     <div class="facebook-page order">
       <div class="text">
-        <h1>Mly <span style="font-size:x-large; color: #2c3e50;">ทำให้ทุกการ <span
-              style="color: #2a5bd7;">เชื่อมต่อ</span> มีความหมาย</span></h1>
+        <h1>THPSD</h1>
         <p>ย่อลิงค์ ฟรี !</p>
         <p>รวดเร็ว ปลอดภัย ไม่หมดอายุ</p>
-        <p>สร้างลิงค์สั้น และ ลิงค์หน้า BIO </p>
-        <p> แบ่งปันลิงค์ของคุณได้บน <strong>Mly Connections</strong>.</p>
+        <p>เครื่องมือย่อ URL สะดวก และรวดเร็ว ที่สุด !</p>
+        <span> <span style="color: #1877F2;">THPSD</span> อนุญาตให้ลดลิงก์แบบยาวจาก Facebook, YouTube, Google Drive,
+          Tiktok, Twitter, Linked In และไซต์ชั้นนำบนอินเทอร์เน็ตเพียงวาง URL แบบยาวแล้วคลิกปุ่ม ยืนยัน ในหน้าจอให้คัดลอก
+          URL ที่ย่อและแบ่งปันบนเว็บไซต์แชทและอีเมล ลิงค์ไม่เสีย โหลดรวดเร็ว ปลอดภัย และลิงค์ไม่มีหมดอายุ</span>
       </div>
       <form @submit.prevent="submit">
         <input v-model="origUrl" type="text" placeholder="ลิงค์ของคุณ" required>
@@ -83,6 +84,7 @@ const submit = async () => {
 
 .facebook-page .text {
   margin-bottom: 90px;
+  margin-right: 90px;
 }
 
 .facebook-page h1 {
@@ -200,7 +202,9 @@ hr {
   }
 
   .facebook-page .text {
+    margin-right: 0px;
     margin-bottom: 30px;
+    width: 70vw;
   }
 }
 
@@ -210,7 +214,16 @@ hr {
   }
 
   .facebook-page p {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
+  }
+
+  .facebook-page .text {
+    margin-right: 0px;
+    width: 70vw;
+  }
+
+  .facebook-page span {
+    font-size: 0.5rem;
   }
 
   form {
