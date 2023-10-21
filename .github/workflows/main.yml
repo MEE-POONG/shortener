@@ -40,4 +40,4 @@ jobs:
         host: ${{ secrets.SERVER_HOST }}
         user: ${{ secrets.SERVER_USER }}
         private_key: ${{ secrets.SSH_KEY }}
-        command: docker pull chunwarayut/${{ steps.string.outputs.lowercase }}:latest && docker stop ${{ steps.string.outputs.lowercase }} && docker rm ${{ steps.string.outputs.lowercase }} && docker run --name ${{ steps.string.outputs.lowercase }} --restart=always -d -p 7020:3333 -e PORT=3333 -e MONGO_URI=mongodb://shorteneruser:HPz2X98Uzpzj22TeUtBxpxnU@128.199.79.240:27017/shortenerdb -e BASE=https://shortener.meetanggroup.com chunwarayut/${{ steps.string.outputs.lowercase }} 
+        command: docker pull chunwarayut/${{ steps.string.outputs.lowercase }}:latest && docker stop ${{ steps.string.outputs.lowercase }} && docker rm ${{ steps.string.outputs.lowercase }} && docker run --name ${{ steps.string.outputs.lowercase }} --restart=always -d -p 7020:3333 -e PORT=3333 -e MONGO_URI=mongodb://shorteneruser:HPz2X98Uzpzj22TeUtBxpxnU@128.199.79.240:27017/shortenerdb -e BASE=https://thpsd.com chunwarayut/${{ steps.string.outputs.lowercase }} 
