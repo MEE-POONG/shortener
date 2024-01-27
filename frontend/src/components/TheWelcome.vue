@@ -35,7 +35,7 @@ const submit = async () => {
     <div class="facebook-page order">
       <div class="text">
         <h1>THPSD</h1>
-        <p>ย่อลิงค์ ฟรี !</p>
+        <p>ย่อลิงค์!</p>
         <p>รวดเร็ว ปลอดภัย ไม่หมดอายุ</p>
         <p>เครื่องมือย่อ URL สะดวก และรวดเร็ว ที่สุด !</p>
         <span> <span style="color: #1877F2;">THPSD</span> อนุญาตให้ลดลิงก์แบบยาวจาก Facebook, YouTube, Google Drive,
